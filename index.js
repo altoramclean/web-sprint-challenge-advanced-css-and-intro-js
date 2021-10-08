@@ -1,3 +1,5 @@
+const { arrayExpression } = require("@babel/types");
+
 const artists = [
   {
     "id": 0,
@@ -208,16 +210,17 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+console.log('Task 1:', artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
-
+console.log('Task 1.2:', artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
+artists[8].name = "Vincent Van Gogh";
+console.log(artists[8]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -228,9 +231,11 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr, ind){
+  return `the artist at index ${ind} is ${arr[ind].name}`
 }
+
+console.log(getArtistByIndex(artists, 3));
 
 
 
@@ -242,9 +247,19 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
-
-function get20s(/*Your Code Here*/) {
+function get20s(array) {
+  let newArray = [];
   /*Your Code Here*/
+  for(let i = 0; i < array.length; i++) {
+    var years = array[i].years.split(" - ");
+    if(years[0] >= 1900 && years[0] <= 2000) {
+      if(years[1] >= 1900 && years[1] <= 2000) {
+        newArray.push(array[i].name);
+      }
+    }
+  }
+  return newArray;
+
 }
 
 
@@ -257,9 +272,9 @@ Use removeArtist to do the following:
 4. Return the length of the remaining dataset.
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
-
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, ind){
+  arr.splice(ind, 1);
+  return arr.length
 }
 
 
@@ -279,8 +294,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(arr){
+  let newObj = {
+    id: 20,
+    name: "Altora Mclean",
+    years: 1999- 1008,
+    genre: "Web Design",
+    nationality: "Jamaican",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et luctus mi, ut venenatis urna. Vestibulum egestas nunc ut dui bibendum viverra." 
+  }
+  arr.push(newObj);
+  return arr
 }
 
 
@@ -292,8 +316,14 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(arr){
+  let newArr = [];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].paintings > 100){
+      newArr.push(arr[i].name);
+    }
+  }
+  return newArr
 }
 
 
@@ -315,4 +345,4 @@ module.exports = {
   removeArtist,
   addArtist,
   lotsOfArt
-}
+} 
