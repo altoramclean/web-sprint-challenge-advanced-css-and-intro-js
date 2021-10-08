@@ -24,7 +24,7 @@ Please answer the following questions below, you may edit the readme file to inc
 
 1. How would you describe acessibility on the web to someone new to programming? 
 
-    Accessibility on the web makes it accessible to all people, it makes the code readable, it helps people understand whats going on the web page in a more accessible way to them, such as bigger fonts,certain color,image sizes being bigger etc.
+    Accessibility on the web makes it accessible to all people, it makes the code readable,its making your website usable by anyone and everyone. It helps people understand whats going on the web page in a more accessible way to them, such as bigger fonts,certain color,image sizes being bigger etc.
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
@@ -32,15 +32,15 @@ Please answer the following questions below, you may edit the readme file to inc
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-    A variable is a defined storage for a data value that can be changed.
+    A variable is a defined storage for a data value that can be changed, it is a way for you to refer back to those values later in your program.
 
 4. What is the purpose of using functions in code?
 
-    Functions allow for programmers to reuse their code, this would save a lot of time.
+    Functions allow for programmers to reuse their code, this would save a lot of time, it is a way to protect a block of code until they are invoked.
 
 5. How do you access a key inside of an object inside of an array?
 
-    you can access a key inside of an object inside of an array by using the keys method(objects.keys(obj));
+    You can access a key inside of an object inside of an array by using the keys method(objects.keys(obj));
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
