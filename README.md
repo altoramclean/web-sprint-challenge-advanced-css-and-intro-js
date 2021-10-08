@@ -23,19 +23,24 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming? 
-    Accessibility on the web makes it accessible to all people, its a way for people who need to access the internet to do so in non-traditional ways, it helps people understand whats going on the web page in a more accessible way to them, such as bigger fonts,certain color,image sizes being bigger etc.
+
+    Accessibility on the web makes it accessible to all people, it makes the code readable, it helps people understand whats going on the web page in a more accessible way to them, such as bigger fonts,certain color,image sizes being bigger etc.
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
-    You can add an "alt"description when you put an image, you can use larger font sizes for those with smaller browser screens,or you can add specific designs like closed captions for the hearing impaired, that way they can read whats going on.
+
+        Adding alternate description for images, adding voice navigation and adjusting font sizes to make headings larger/bolder.
 
 3. How would you explain the concept of a variable to someone new to programming?
-    A variable is a consisted of building blocks of javascript,it allows us to store values that we can refer to and retrieve later in our program, there are three ways to declare a variable through var,let and const.
+
+    A variable is a defined storage for a data value that can be changed.
 
 4. What is the purpose of using functions in code?
-    Functions are a way to protect a block of code until they are invoked.
+
+    Functions allow for programmers to reuse their code, this would save a lot of time.
 
 5. How do you access a key inside of an object inside of an array?
-    you can access a key inside of an object inside of an array by referencing the index then the key with console.log.npm
+
+    you can access a key inside of an object inside of an array by using the keys method(objects.keys(obj));
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -71,7 +76,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Ensure your website is responsive at 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [ x] Ensure your website is responsive at 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
