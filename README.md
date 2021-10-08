@@ -35,7 +35,7 @@ Please answer the following questions below, you may edit the readme file to inc
     Functions are a way to protect a block of code until they are invoked.
 
 5. How do you access a key inside of an object inside of an array?
-    you can access a key inside of an object inside of an array by referencing the index then the key with console.log.
+    you can access a key inside of an object inside of an array by referencing the index then the key with console.log.npm
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
